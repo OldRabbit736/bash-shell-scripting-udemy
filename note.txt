@@ -55,3 +55,14 @@ examples:
 - cat file (show the contents of the file on the screen)
 - cat file1 file2 (show the contents of the file1 and file2 contatenated)
 - cat file1 file2 > file3 (replace contents of the file with the contatenated contents from file1 and file2)
+
+| : pipe (commaind1 | commaind2 | ...)
+examples:
+- ls a-folder | less
+- ls a-folder | tail -2 (show the last 2 lines from the output of ls a-folder command)
+- ls a-folder | tail -3 | sort > myfile.txt
+
+tail
+examples:
+- tail -2 a.txt (show the last 2 liens of a.txt file)
+
