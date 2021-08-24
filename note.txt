@@ -27,3 +27,16 @@ examples:
 rm: remove!
 examples:
 - rm b.html (remove b.html)
+- rm a-folder/* (remove everything in a-folder)
+
+file: show info about files
+examples:
+- file bbb.txt a.html (show info of files)
+- file *.txt (show info of the files with extension .txt)
+
+-r : recursively
+examples:
+- cp -r a-folder a2-folder
+- rm -r a2-folder
+- mv a-folder a2-folder <-- exception (doesn't need -r)
+- ls -R .
