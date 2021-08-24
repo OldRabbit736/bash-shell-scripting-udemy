@@ -1,0 +1,29 @@
+pwd: present working directory
+
+ls -l
+ls -a
+ls -la
+
+xdg-open
+
+touch: make files
+example: touch abc.txt
+
+mkdir: make directories
+
+mv: change name of a file
+example: mv aaa.txt bbb.txt (aaa.txt changed to bbb.txt)
+
+mv: move a file to a directory
+examples:
+- mv bbb.txt some-folder (bbb.txt moved into some-folder)
+- mv some-folder/bbb.txt . (bbb.txt in some-folder moved to the working directory)
+
+cp: copy!
+examples:
+- cp bbb.txt ccc.txt (copy bbb.txt to ccc.txt)
+- cp bbb.txt a-folder/ (copy bbb.txt into a-folder)
+
+rm: remove!
+examples:
+- rm b.html (remove b.html)
