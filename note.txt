@@ -73,3 +73,26 @@ examples:
 - find myfolder -name aaa.txt (find the files in the folder)
 - find myfolder -type f (find all the files in the folder)
 - find myfolder -type d (find all the folders(directories) in the folder)
+
+grep : find lines
+examples:
+- grep abc a.txt (find lines contains abc in a.txt file)
+- grep -i abc b.txt (find lines case-insensitively)
+- ls -l | grep .txt
+- ls -l | grep -v .txt (the rest lines (everything else))
+
+awk :
+examples:
+- awk '{print}' bbb.txt (all the content)
+- awk '{print $1}' bbb.txt (the first column)
+- awk '{print $1, $3}' bbb.txt (the first and third column)
+- awk '{print $1 $3}' bbb.txt (the first and third column concatenated)
+- awk '{print $0}' bbb.txt (all the content)
+- awk '{print $NF}' bbb.txt (the last column)
+- awk '{print $(NF-1)}' bbb.txt (the first column from the last column)
+- awk 'NR==1 {print }' bbb.txt (the first row)
+- awk 'NR==1,NR==5 {print }' bbb.txt (the first to fifth rows)
+- awk 'NR==1;NR==5 {print }' bbb.txt (the first and the fifth rows)
+- awk 'NR==1 {print $1}' bbb.txt (the first column in the first row)
+- awk 'NR==1;NR==4 {print $2,$3}' bbb.txt (the second and third columns in the first and fourth rows)
+- awk -F ";" '{print $1}' wow.txt (the first column with the separator ';')
