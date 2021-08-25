@@ -118,11 +118,13 @@ chown : change ownership
 examples:
 - sudo chown username filename (change ownership of filename to username)
 - sudo touch abc.txt --> sudo chown oldrabbit abc.txt (abc.txt owner changed to oldrabbit)
+- sudo chown -R oldrabbit foldername (change ownership of foldername and files and folders inside it to oldrabbit)
 
 chgrp : change group
 examples:
 - sudo chgrp groupname filename (change groupname of filename to groupname)
 - sudo touch abc.txt --> sudo chgrp oldrabbit abc.txt (abc.txt owner changed to oldrabbit)
+- sudo chgrp -R oldrabbit foldername (change group of foldername and files and folders inside it to oldrabbit)
 
 chmod (reference)(operator)(modes) : change permission
 reference:
