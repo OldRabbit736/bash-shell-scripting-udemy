@@ -194,3 +194,8 @@ read:
 - read -p "type your age " age
 - read -s password
 - read -sp "type password: " pass
+
+which: show the path of the command
+examples:
+- which ls (show the ls command binary path)
+- which bash (the path is used in the #! line)
