@@ -184,3 +184,9 @@ login script files: (located in the user folder(~ = /home/user))
 examples:
 - ls -a ~ (show filse in the user folder and one of those script files is shown)
 to apply login script, exit and restart terminal or type in "source"
+
+read:
+- read myvalue --> type in some values... (values assigned to myvalue)
+- read -p "type your age " age
+- read -s password
+- read -sp "type password: " pass
