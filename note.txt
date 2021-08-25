@@ -199,3 +199,8 @@ which: show the path of the command
 examples:
 - which ls (show the ls command binary path)
 - which bash (the path is used in the #! line)
+
+arithmetic expressions:
+$((expression))
+examples:
+- echo $((2+3))
