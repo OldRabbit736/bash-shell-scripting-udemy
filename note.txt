@@ -168,3 +168,10 @@ examples:
 - $USER
 - $HOME
 - $PATH
+
+$(command) or `command`: command substitution-expansion
+(recommaned is $())
+examples:
+- d=$(ls) (ls outputs assigned to variable d)
+- d=$(ls) --> echo $d
+- p=$(pwd) --> cd --> cd $p or ls $p ...
