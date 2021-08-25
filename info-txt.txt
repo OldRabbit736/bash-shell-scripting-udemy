@@ -1,0 +1,4 @@
+-rw-r--r-- 1 oldrabbit oldrabbit 6484 Aug 25 13:19 note.txt
+drwxr-xr-x 2 oldrabbit oldrabbit 4096 Aug 25 10:59 permission
+-rw-r--r-- 1 oldrabbit oldrabbit  121 Aug 25 09:44 wow.txt
+-rw-r--r-- 1 oldrabbit oldrabbit  136 Aug 25 09:52 wow2.txt

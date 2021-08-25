@@ -1,8 +1,11 @@
 pwd: present working directory
 
-ls -l
-ls -a
-ls -la
+ls: list files and folders
+examples:
+- ls -l (list long)
+- ls -a (list all)
+- ls -la (list all and long)
+- ls b* (list files and folders that start with b)
 
 xdg-open
 
@@ -80,6 +83,7 @@ examples:
 - grep -i abc b.txt (find lines case-insensitively)
 - ls -l | grep .txt
 - ls -l | grep -v .txt (the rest lines (everything else))
+- ls | grep e (find lines containing e)
 
 awk :
 examples:
