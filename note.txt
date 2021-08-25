@@ -147,3 +147,24 @@ examples:
 - chmod u=r,g+x file.txt (user permission set to r, guest gets x permission) (no spaces between u=r, and g+x)
 - chmod +x file.txt (all the references get x permission)
 - chmod -x file.txt (all the references lose x permission)
+
+variables
+set:
+- myvar=123
+accessing:
+- $myvar or ${myvar}
+unset:
+- g=something --> unset g
+examples:
+- myvar=123 (myvar set to 123) --> echo "the value of variable is $myvar" (show "the value of my variable is 123" on the screen)
+- myvar=123 --> c=cats --> echo "I have $myvar $c" ("I have 123 cats" on the screen)
+- g=something --> unset g --> echo "value: $g" ("value: " on the screen)
+- var=hey --> echo ${var}yo! (heyyo! on the screen)
+- mycommand=ls --> $mycommand (equivalent to ls command execution)
+- mycommand2=echo --> $mycommand2 abcdef (shows abcdef on the screen)
+
+environment variables
+examples:
+- $USER
+- $HOME
+- $PATH
