@@ -118,5 +118,30 @@ chown : change ownership
 examples:
 - sudo chown username filename (change ownership of filename to username)
 - sudo touch abc.txt --> sudo chown oldrabbit abc.txt (abc.txt owner changed to oldrabbit)
+
+chgrp : change group
+examples:
 - sudo chgrp groupname filename (change groupname of filename to groupname)
 - sudo touch abc.txt --> sudo chgrp oldrabbit abc.txt (abc.txt owner changed to oldrabbit)
+
+chmod (reference)(operator)(modes) : change permission
+reference:
+- u: user
+- g: group
+- o: other
+- a: all
+operator:
+- +: add
+- -: remove
+- =: set
+modes:
+- r: read
+- w: write
+- x: execute
+- -: no permission
+examples:
+- chmod u=wrx file.txt (user permission for file.txt sets to w, r, x)
+- chmod ug+rw file.txt (user and group gets r, x permissions)
+- chmod u=r,g+x file.txt (user permission set to r, guest gets x permission) (no spaces between u=r, and g+x)
+- chmod +x file.txt (all the references get x permission)
+- chmod -x file.txt (all the references lose x permission)
