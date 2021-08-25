@@ -204,3 +204,9 @@ arithmetic expressions:
 $((expression))
 examples:
 - echo $((2+3))
+
+$? : show exit status (0 means success, the others mean not success)
+examples:
+- pwd --> echo $? (shows 0, which means the previous command ends successfully)
+- pwd -basdfg --> echo $? (shows 2, which means the previous command ends not successfully)
+- qfesdf --> echo $? (shows 127, which means the previous command ends not successfully)
