@@ -105,3 +105,18 @@ examples:
 - awk '{print length($1)}' wow2.txt (the length(the number of characters) of the first column)
 - awk '{print $1, length($1)}' wow2.txt (the first column and the length(the number of characters) of the first column)
 - awk 'NR==2 {print $1, length($1), $4}' wow2.txt
+
+
+sudo
+examples:
+- sudo touch filename (make file as superuser)
+- sudo bash (open bash as superuser) --> exit (return to user)
+
+whoami: show user
+
+chown : change ownership
+examples:
+- sudo chown username filename (change ownership of filename to username)
+- sudo touch abc.txt --> sudo chown oldrabbit abc.txt (abc.txt owner changed to oldrabbit)
+- sudo chgrp groupname filename (change groupname of filename to groupname)
+- sudo touch abc.txt --> sudo chgrp oldrabbit abc.txt (abc.txt owner changed to oldrabbit)
