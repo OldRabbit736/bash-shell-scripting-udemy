@@ -1,0 +1,6 @@
+NAME COUNTRY SEX AGE POINTS
+Frank usa M 32 4323 001
+John usa M 51 232:002
+Lara spain:F 32 2321:034
+Lisa usa F 22 2314:032
+R usa F 33 33

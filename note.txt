@@ -96,3 +96,12 @@ examples:
 - awk 'NR==1 {print $1}' bbb.txt (the first column in the first row)
 - awk 'NR==1;NR==4 {print $2,$3}' bbb.txt (the second and third columns in the first and fourth rows)
 - awk -F ";" '{print $1}' wow.txt (the first column with the separator ';')
+- awk '/usa/ {print}' wow2.txt (the rows containing 'usa')
+- awk '/usa|spain/ {print}' wow2.txt (the rows containing 'usa' or 'spain')
+- awk '/i/ {print}' wow2.txt (the rows containing 'i')
+- awk '$2~/i/ {print}' wow2.txt (the rows containing 'i' in the second column)
+- awk '$2~/i/ {print $2,$4}' wow2.txt (the second and fourth columns in the rows containing 'i' in the second column)
+- awk '$4==$5 {print }' wow2.txt (the rows of which the fourth and fifth columns are the same)
+- awk '{print length($1)}' wow2.txt (the length(the number of characters) of the first column)
+- awk '{print $1, length($1)}' wow2.txt (the first column and the length(the number of characters) of the first column)
+- awk 'NR==2 {print $1, length($1), $4}' wow2.txt
